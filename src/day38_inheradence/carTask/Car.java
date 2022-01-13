@@ -15,4 +15,12 @@ public class Car {
         this.color = color;
         this.miles = miles;
     }
+    
+    public void start(){
+        System.out.println(brand+" "+ model+ " is driving");
+    }
+    public void drive(){
+        System.out.println(brand+" "+ model+ " is driving");
+    }
+
 }
