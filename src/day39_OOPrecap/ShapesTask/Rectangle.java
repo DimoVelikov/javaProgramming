@@ -28,8 +28,8 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    public Rectangle(String name, double length, double width) {
-        super(name);
+    public Rectangle( double length, double width) {
+        super("Rectangle");
         setLength(length);
         setWidth(width);
     }

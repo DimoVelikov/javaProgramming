@@ -19,8 +19,8 @@ public class Circle extends Shape {
         this.r = r;
     }
 
-    public Circle(String name,double r) {
-        super(name);
+    public Circle(double r) {
+        super("Circle");
         setR(r);
     }
 
