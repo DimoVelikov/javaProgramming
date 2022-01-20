@@ -11,12 +11,12 @@ public class Animal {
 
 
     public Animal(String name, String breed, char gender, String color, String size, int age) {
-        setName(name);
+        this.name = name;
         this.breed = breed;
         this.gender = gender;
         this.color = color;
-        setSize(size);
-        setAge(age);
+        this.size = size;
+        this.age = age;
     }
 
     public String getName() {
@@ -54,6 +54,26 @@ public class Animal {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", gender=" + gender +
+                ", color='" + color + '\'' +
+                ", size='" + size + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public void eat(){
+        System.out.println(name+ " is eating");
+    }
+
+    public final void drink(){
+        System.out.println(name+ "is drinking water");
     }
 
 
