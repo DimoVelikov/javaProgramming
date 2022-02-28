@@ -101,7 +101,7 @@ public class DivideWithoutDivideOperator {
 
     public static void main(String[] args) {
 
-        System.out.println("division result = " + division(10, -5));
+        System.out.println("division result = " + division(0, -5));
 
     }
 }
