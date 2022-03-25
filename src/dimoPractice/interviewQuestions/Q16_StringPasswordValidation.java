@@ -30,7 +30,7 @@ if all requirements above are met, the method returns true, otherwise returns fa
         //i will use the length method to check if the password meet the min char requirement
          */
 
-        boolean minChars = password.length()>=6;
+        boolean minChars = password.length()>=6 && !password.contains(" ");
         boolean upperCase = false;
         boolean lowerCase = false;
         boolean specialChar = false;
